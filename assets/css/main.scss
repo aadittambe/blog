@@ -1,0 +1,118 @@
+---
+# this ensures Jekyll reads the file to be transformed into CSS later
+---
+
+@import 'colors';
+@import 'typography';
+
+body{
+    font-family: $ff-r;
+    background: $background;
+}
+
+a, a:hover, a:visited, a:active {
+    color: inherit;
+    text-decoration: none;
+   }
+
+#title{
+    color: $highlight;
+    font-size: 24px;
+    align-self: flex-end;
+    padding-bottom: 20px;
+}
+
+#title .website{
+    text-align: right;
+}
+
+#title span{
+    font-size: 18px;
+    color: $text;
+}
+
+#posts {
+    color: $text;
+}
+
+#container{
+    padding-top: 50px;
+    margin-right: 350px;
+    margin-left: 350px;
+    // margin: 0 auto;
+}
+
+table {
+    width: 100%;
+}
+
+a .post-title:hover{
+    color: $text;
+    text-decoration-line: underline; 
+    text-decoration-thickness: 3px;
+    text-decoration-color: #edcf2e;
+}
+
+table .post-date{
+    text-align: right;
+}
+
+footer {
+    color: $text;
+    margin-top: 400px;
+    border-top: 2px solid $grey;
+    text-align: right;
+  }
+
+  .menuitem {
+    display: inline;
+    margin: 0 10px; 
+    font-size: 24px;
+  }
+
+  i{
+      transition: all 0.5s ;
+  }
+
+  i:hover{
+    transform:scale(1.25);
+    color: #edcf2e;
+}
+
+  .float-container {
+    padding: 20px;
+}
+
+.float-child {
+    margin-top: 36px;
+    margin-bottom: 24px;
+    width: 50%;
+    float: left;
+} 
+
+#right{
+    text-align: right;
+}
+
+#left{
+    text-align: left;
+}
+
+.name span{
+    color: $highlight;
+}
+
+
+@media only screen and (max-width: 1000px) {
+    #container{
+        margin-right: 100px;
+        margin-left: 100px;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    #container{
+        margin-right: 50px;
+        margin-left: 50px;
+    }
+}
