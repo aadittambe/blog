@@ -18,28 +18,17 @@
     <div id="container">
         <nav>
             <ul>
-                <li><a href="{{ site.url | absolute_url }}">{{ page.title }}</a></li>
+                <li><a href="{{ site.url | absolute_url }}">Home</a></li>
                 <li><a href="https://aadittambe.com/">Website</a></li>
             </ul>
         </nav>
         <div id="head">
-            <h1>📝 Blog</h1>
+            <h1>✍🏽 {{ page.title }}</h1>
+            <h2>{{ page.date | date: "%B %-d, %Y"}}</h2>
         </div>
-
-        <div id="posts">
-            <table>{% for post in site.posts %}
-                <tr>
-                    <td class="post-title">
-                        <p><a href="{{ post.url }}">{{ post.title}}</a></p>
-                    </td>
-                    <td class="post-date">
-                        <p><a href="{{ post.url }}">{{ post.date | date: "%b %-d, %Y" }}</a></p>
-                    </td>
-                </tr>
-                {% endfor %}
-            </table>
-        </div> <!-- closes post -->
-
+        <div id="post-content">
+            {{content}}
+        </div>
         <footer>
             <div class="float-child" id="left">
                 <p class="name">© <a href="https://aadittambe.com/"><span>Aadit Tambe</span></a> |
@@ -60,7 +49,7 @@
                 </ul>
             </div>
         </footer>
-    </div> <!-- closes container -->
+    </div>
 </body>
 
 </html>
