@@ -16,7 +16,6 @@ Where `YEAR` is a four-digit number, `MONTH` and `DAY` are both two-digit number
 for i in myList:
   i = i + 2
   print(i)
-
 ```
 
 Jekyll also offers powerful support for code snippets:

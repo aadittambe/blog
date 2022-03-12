@@ -38,6 +38,10 @@ a:hover{
    color: $grey;
 }
 
+#container p{
+    margin-top: 1rem;   
+}
+
 #container h2{
    color: $grey;
    font-size: 18px;
@@ -62,6 +66,18 @@ table{
 #post-content{
     border-top: 2px solid $grey;
     padding-top: 20px;
+}
+
+code{
+    background-color: #f6f4e6;
+    border-radius: 2px;
+}
+
+.highlight{
+    background-color: #f6f4e6;
+    border-radius: 5px;
+    padding: 5px;
+    margin-bottom: 0px;
 }
 
 footer {
