@@ -18,7 +18,7 @@
     <div id="container">
         <nav>
             <ul>
-                <li><a href="{{ site.url | absolute_url }}">{{ page.title }}</a></li>
+                <li><a href="{{ site.url }}">{{ page.title }}</a></li>
                 <li><a href="https://aadittambe.com/">Website</a></li>
             </ul>
         </nav>
@@ -33,7 +33,7 @@
                         <p><a href="{{ post.url }}">{{ post.title}}</a></p>
                     </td>
                     <td class="post-date">
-                        <p><a href="{{ post.url }}">{{ post.date | date: "%b %-d, %Y" }}</a></p>
+                        <p><a href="{{ post.url }}">{{ post.date | date: "%B %-d, %Y" }}</a></p>
                     </td>
                 </tr>
                 {% endfor %}
