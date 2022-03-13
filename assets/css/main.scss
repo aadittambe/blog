@@ -16,6 +16,10 @@ a:hover{
 
 }
 
+nav{
+    padding-bottom: 30px;
+}
+
 #container{
     max-width: 700px;
     margin: auto;
@@ -34,15 +38,28 @@ a:hover{
   padding-left: 20px;
 }
 
+#container #post-content li {
+    color: $grey;
+  display: list-item;
+  padding-left: 0;
+}
+
 #container h1, p{
    color: $grey;
 }
 
-#container p{
-    margin-top: 1rem;   
+
+#container #post-content a{
+   border-bottom: solid 3px #edcf2e;
+    transition: all .1s;
 }
 
 #container h2{
+   color: $grey;
+   font-size: 20px;
+}
+
+#container h3{
    color: $grey;
    font-size: 18px;
 }
@@ -76,8 +93,8 @@ code{
 .highlight{
     background-color: #f6f4e6;
     border-radius: 5px;
-    padding: 5px;
-    margin-bottom: 0px;
+    // padding: 5px;
+    // margin-bottom: 0px;
 }
 
 footer {
