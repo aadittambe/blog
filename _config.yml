@@ -18,12 +18,12 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 
-title: Aadit's blog
+title: Aadit Tambe — journalist and developer
 email: aadit.tambe@gmail.com
 description: >- # this means to ignore newlines until "baseurl:"
-  Write an awesome description for your new site here. You can edit this
-  line in _config.yml. It will appear in your document head meta (for
-  Google search results) and in your feed.xml site description.
+ This blog features methods and documentation for libraries, tools and other resources useful for data and graphics journalism. My goal is to make documentation easier to read and understand, and share weird and helpful hacks I learn.
+
+
 baseurl: "/" # the subpath of your site, e.g. /blog
 url: "blog.aadittambe.com" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: aadittambe
