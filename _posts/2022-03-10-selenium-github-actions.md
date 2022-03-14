@@ -100,7 +100,7 @@ data = pd.DataFrame(list_of_rows, columns=["link","name", "organization", "date"
 data.to_csv("data.csv",index=False)
 ```
 
-### Step 6: Safe the file, and automate the scraper with GitHub Actions
+### Step 6: Save the file, and automate the scraper with GitHub Actions
 
 I have named this script file `scraper.py` and added it a [GitHub repository](https://github.com/aadittambe/selenium-scraper). This is what my Actions workflow looks like. The YAML file is stored in the `.github/workflows` directory, as `main.yml` — the Action is scheduled to run every day at 8 a.m. 
 
