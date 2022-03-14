@@ -12,13 +12,13 @@ categories: journalism
 
 ## 🖼 Once upon a time in a land far far away ... 
 
-For about half a year now, I have been a fan of writing web scrapers and automating them with [GitHub's powerful Actions feature](https://github.com/features/actions). The free GitHub feature — originally created for software engineers to build pipelines for testing, releasing and deploying software — is an [efficient way for journalists](https://palewi.re/docs/first-github-scraper/) to run Python web scrapers on a schedule, without having to set up a server.
+For about half a year now, I have been a fan of writing web scrapers and automating them with [GitHub's powerful Actions feature](https://github.com/features/actions). The free GitHub feature — originally created for engineers to build pipelines for testing, releasing and deploying software — is an [efficient way for journalists](https://palewi.re/docs/first-github-scraper/) to run Python web scrapers on a schedule, without having to set up a server.
 
-One problem stumped me, though: "`requests` is cool, but how do I set up a `selenium` scraper with GitHub Actions, since it requires the installation of a WebDriver?"
+Until a couple of months ago, however, I couldn't get GitHub Actions to set up a WebDriver to scrape with Selenium.
 
 While [`requests`](https://docs.python-requests.org/en/latest/) allows us to send HTTP requests to get data from websites, [`selenium`](https://selenium-python.readthedocs.io/) shines when we want to push buttons, fill input forms, scroll and take screenshots. 
 
-As journalism educator Jonathan Soma explains in [this video](https://www.youtube.com/watch?v=mAwL_0N1W9E&t), Selenium is a browser automation software to control a web browser, such as Chrome or Firefox. However, in order for Selenium to pass commands to the web browser, it uses a WebDriver. So, the first step in building a Selenium web scraper is to set up a WebDriver, which can issue commands to the browser on behalf of Selenium.
+As journalism instructor Jonathan Soma explains in [this video](https://www.youtube.com/watch?v=mAwL_0N1W9E&t), Selenium is a browser automation software to control a web browser, such as Chrome or Firefox. It uses a WebDriver to pass commands to — and control — the web browser. So, the first step in building a Selenium web scraper is to set up a WebDriver.
 
 There are two problems — headaches, rather — with this approach: 
 1. As a web browser updates, the WebDriver for that browser also updates. As a result, every time your browser updates, you have to download a new WebDriver such that the versions are consistent. 
@@ -26,7 +26,7 @@ There are two problems — headaches, rather — with this approach:
 
 `webdriver-manager` automatically manages your WebDriver to make it match your browser version. It's slick because you don't have to download anything from the internet, and you can run the script with GitHub Actions.
 
-An example: for a side project, I am scraping data for [journalists killed](https://cpj.org/data/killed/?status=Killed&motiveConfirmed%5B%5D=Confirmed&type%5B%5D=Journalist&start_year=1992&end_year=2022&group_by=year) on the line of duty every day. It's collected by the Committee to Protect Journalists, and lives in a tabular format on multiple pages. The URL does not change when I switch between pages, and, therefore, `requests` alone wouldn't do the trick. 
+An example: for a side project, I am scraping data for [journalists killed](https://cpj.org/data/killed/?status=Killed&motiveConfirmed%5B%5D=Confirmed&type%5B%5D=Journalist&start_year=1992&end_year=2022&group_by=year) on the line of duty every day. It's collected by the Committee to Protect Journalists, and lives in a tabular format spread across multiple pages. The URL does not change when a user switches between pages, and, therefore, `requests` alone wouldn't do the trick. 
 
 ## 💪 Building the script & automating the process
 
@@ -144,7 +144,7 @@ If you're looking to further learn about GitHub Actions, check out [this](https:
 
 ## 🧐 Moral of the story
 
-In conclusion, you may never have to go back to downloading a WebDriver, and re-downloading it every time your browser updates, if you use this `webdriver-manager`.
+In conclusion, if you use `webdriver-manager`, you may never have to go back to downloading a WebDriver — and continue re-downloading it every time your browser updates.
 
 Happy web scraping & automating! 🤖
 
