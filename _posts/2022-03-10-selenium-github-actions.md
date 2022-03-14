@@ -16,9 +16,9 @@ For about half a year now, I have been a fan of writing web scrapers and automat
 
 Until a couple of months ago, however, I couldn't get GitHub Actions to set up a WebDriver to scrape with Selenium.
 
-While [`requests`](https://docs.python-requests.org/en/latest/) allows us to send HTTP requests to get data from websites, [`selenium`](https://selenium-python.readthedocs.io/) shines when we want to push buttons, fill input forms, scroll and take screenshots. 
+While [`requests`](https://docs.python-requests.org/en/latest/) allows us to send HTTP requests to get data from websites, [`selenium`](https://selenium-python.readthedocs.io/) truly shines where we need to push buttons, fill input forms, scroll and take screenshots in a browser window. 
 
-As journalism instructor Jonathan Soma explains in [this video](https://www.youtube.com/watch?v=mAwL_0N1W9E&t), Selenium is a browser automation software to control a web browser, such as Chrome or Firefox. It uses a WebDriver to pass commands to — and control — the web browser. So, the first step in building a Selenium web scraper is to set up a WebDriver.
+As journalism educator Jonathan Soma explains in [this video](https://www.youtube.com/watch?v=mAwL_0N1W9E&t), Selenium is a browser automation software to control a web browser, such as Chrome or Firefox. It uses a WebDriver to pass commands to — and control — the web browser. So, the first step in building a Selenium web scraper is to set up a WebDriver.
 
 There are two problems — headaches, rather — with this approach: 
 1. As a web browser updates, the WebDriver for that browser also updates. As a result, every time your browser updates, you have to download a new WebDriver such that the versions are consistent. 
@@ -30,7 +30,7 @@ An example: for a side project, I am scraping data for [journalists killed](http
 
 ## 💪 Building the script & automating the process
 
-Here's how I went about building the scraper using Python, `Selenium`, `webdriver-manager` and GitHub Actions:
+Here's how I built the scraper using Python, `Selenium`, `webdriver-manager` and GitHub Actions:
 
 ### Step 1: Import libraries 
 In the Python script, I install and imported all the libraries I was going to need. You may have to use `pip` to [install](https://pypi.org/project/webdriver-manager/) `webdriver-manager`.
