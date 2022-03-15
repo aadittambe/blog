@@ -111,14 +111,16 @@ footer {
 .menuitem a:hover{
     display: inline;
     color: $yellow;
+    border-bottom: none;
   }
-    .menuitem i {
-    transition: all 0.5s ;
+.menuitem i {
+transition: all 0.5s ;
 
 }
-  .menuitem i:hover{
+  .menuitem a i:hover{
     transform:scale(1.25);
     color: #edcf2e;
+    border-bottom: none;
 }
 
 
