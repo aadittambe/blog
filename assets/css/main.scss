@@ -2,28 +2,33 @@
 # this ensures Jekyll reads the file to be transformed into CSS later
 ---
 
-@import 'colors';
-@import 'typography';
+@import "colors";
+@import "typography";
 
-a, a:visited, a:active {
-    color: inherit;
-    text-decoration: none;
-   }
-
-a:hover{
-    border-bottom: solid 3px #edcf2e;
-	transition: all .1s;
-
+.hidden {
+  display: none;
 }
 
-nav{
-    padding-bottom: 30px;
+a,
+a:visited,
+a:active {
+  color: inherit;
+  text-decoration: none;
 }
 
-#container{
-    max-width: 700px;
-    margin: auto;
-    padding-top: 20px;
+a:hover {
+  border-bottom: solid 3px #edcf2e;
+  transition: all 0.1s;
+}
+
+nav {
+  padding-bottom: 30px;
+}
+
+#container {
+  max-width: 700px;
+  margin: auto;
+  padding-top: 20px;
 }
 
 #container ul {
@@ -39,102 +44,108 @@ nav{
 }
 
 #container #post-content li {
-    color: $grey;
+  color: $grey;
   display: list-item;
   padding-left: 0;
 }
 
-#container h1, p{
-   color: $grey;
+h1 {
+  padding-bottom: 12px;
 }
 
-
-#container #post-content a{
-   border-bottom: solid 3px #edcf2e;
-    transition: all .1s;
+#container h1,
+p {
+  color: $grey;
 }
 
-#container h2{
-   color: $grey;
-   font-size: 20px;
+#container #post-content a {
+  border-bottom: solid 3px #edcf2e;
+  transition: all 0.1s;
 }
 
-#container h3{
-   color: $grey;
-   font-size: 18px;
+#container h2 {
+  padding-bottom: 12px;
+  color: $grey;
+  font-size: 20px;
 }
 
-#head{
-    padding-bottom: 20px;
+#container h3 {
+  color: $grey;
+  font-size: 18px;
 }
 
-table{
-    width: 100%;
+#head {
+  padding-bottom: 20px;
+
+  p {
+    margin-bottom: 6px;
+  }
 }
 
-.post-date{
-    text-align: right;
+table {
+  width: 100%;
 }
 
-.post-date p a:hover{
-    border-bottom: none;
+.post-date {
+  text-align: right;
 }
 
-#post-content{
-    border-top: 2px solid $grey;
-    padding-top: 20px;
+.post-date p a:hover {
+  border-bottom: none;
 }
 
-code{
-    background-color: #f6f4e6;
-    border-radius: 2px;
+#post-content {
+  border-top: 2px solid $grey;
+  padding-top: 20px;
 }
 
-.highlight{
-    background-color: #f6f4e6;
-    border-radius: 5px;
-    // padding: 5px;
-    // margin-bottom: 0px;
+code {
+  background-color: #f6f4e6;
+  border-radius: 2px;
+}
+
+.highlight {
+  background-color: #f6f4e6;
+  border-radius: 5px;
+  // padding: 5px;
+  // margin-bottom: 0px;
 }
 
 footer {
-    margin-top: 48px;
-    border-top: 2px solid $grey;
-    // text-align: right;
-  }
+  margin-top: 24px;
+  border-top: 2px solid $grey;
+  // text-align: right;
+}
 
-  .menuitem a{
-    display: inline;
-    color: $grey;
-  }
+.menuitem a {
+  display: inline;
+  color: $grey;
+}
 
-.menuitem a:hover{
-    display: inline;
-    color: $yellow;
-    border-bottom: none;
-  }
+.menuitem a:hover {
+  display: inline;
+  color: $yellow;
+  border-bottom: none;
+}
 .menuitem i {
-transition: all 0.5s ;
-
+  transition: all 0.5s;
 }
-  .menuitem a i:hover{
-    transform:scale(1.25);
-    color: #edcf2e;
-    border-bottom: none;
+.menuitem a i:hover {
+  transform: scale(1.25);
+  color: #edcf2e;
+  border-bottom: none;
 }
-
 
 .float-child {
-    margin-top: 36px;
-    margin-bottom: 24px;
-    width: 50%;
-    float: left;
-} 
-
+  margin-top: 36px;
+  margin-bottom: 24px;
+  width: 50%;
+  float: left;
+}
 
 @media only screen and (max-width: 720px) {
-    #container{
-        padding-right: 20px;
-        padding-left: 20px;
-    }
+  #container {
+    padding-right: 20px;
+    padding-left: 20px;
+  }
 }
