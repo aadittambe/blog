@@ -37,7 +37,7 @@
       <div id="posts">
         <table>
           {% for post in site.posts %}
-          <tr>
+          <tr class="{{ post.hidden }}">
             <td class="post-title">
               <p><a href="{{ post.url }}">{{ post.title}}</a></p>
             </td>

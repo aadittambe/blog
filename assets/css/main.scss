@@ -5,6 +5,10 @@
 @import "colors";
 @import "typography";
 
+.hidden {
+  display: none;
+}
+
 a,
 a:visited,
 a:active {
@@ -45,6 +49,10 @@ nav {
   padding-left: 0;
 }
 
+h1 {
+  padding-bottom: 12px;
+}
+
 #container h1,
 p {
   color: $grey;
@@ -68,6 +76,10 @@ p {
 
 #head {
   padding-bottom: 20px;
+
+  p {
+    margin-bottom: 6px;
+  }
 }
 
 table {
